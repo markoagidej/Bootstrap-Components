@@ -11,28 +11,58 @@
             <h1 class="text-light">Header</h1>
             <p class="text-light">This is an introductory text section center both horizontally and vertically inside the header.</p>
         </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" class="text-primary">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" class="text-primary">Cloud</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" class="text-primary">Networking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" class="text-primary">World</a>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <section class="container text-center" id="featurette">
             <h2 class="my-3">Features</h2>
+            <!-- Genuinely unsure how adding the cards broke the columns in this grid -->
             <div class="row my-3">
                 <div class="col-12 col-md-4">
-                    <div class="m-3">
-                        <img src="cloud.png" class="img-fluid" alt="cloud">
-                        <h3>The Cloud</h3>
-                        <p>The cloud is everywhere, and we harness it's power!</p>
+                    <div class="card m-3">
+                        <img src="cloud.png" class="card-img-top" alt="cloud">
+                        <div class="card-body">
+                            <h3 class="card-title">The Cloud</h3>
+                            <p class="card-text">The cloud is everywhere, and we harness it's power!</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="m-3">
-                        <img src="network.jfif" class="img-fluid" alt="network">
-                        <h3>Networking</h3>
-                        <p>Networking is access</p>
+                    <div class="card m-3">
+                        <img src="network.jfif" class="card-img-top" alt="network">
+                        <div class="card-body"></div>
+                            <h3 class="card-title">Networking</h3>
+                            <p class="card-text">Networking is access</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="m-3">
-                        <img src="world.jpeg" class="img-fluid" alt="world">
-                        <h3>The World</h3>
-                        <p>When you network Clouds, you get <em>the world</em></p>                    
+                    <div class="card m-3">
+                        <img src="world.jpeg" class="card-img-top" alt="world">
+                        <div class="card-body">
+                            <h3 class="card-title">The World</h3>
+                            <p class="card-text">When you network Clouds, you get <em>the world</em></p>
+                        </div>                   
                     </div>
                 </div>
             </div>
